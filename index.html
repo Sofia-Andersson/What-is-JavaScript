@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<!-- Yay! Idag bygger vi en företagssite. Här är två saker som kan
+  vara bra att veta innan du börjar.
+  
+  1. Vi använder en klass som heter container på alla sektioner på
+  den här sidan. Den styr själva grundstrukturen, t.ex. hur bred varje
+  sektion är, hur texten ska vara formatterad m.m. Helt enkelt styling
+  som ska gälla för alla sektioner.
+  
+  2. Vi använder en bakgrundsbild till toppen av sidan. Det är ett vanlig
+  metod för att få text ovanpå en bild. Det som är lite annorlunda med denna
+  metod är att bilden läggs in i CSS-filen och inte i HTML-filen, precis som
+  om du hade gjort en bakgrundsfärg. Ta en titt i CSS-filen efter
+  background-image så ser du hur det är kopplat!
+
+      Lycka till! -->
+
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+
+    <!--En font som vi denna gång hämtar från google fonts-->
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+    <title>This is JavaScript</title>
+    
+    <link rel='icon' href='favicon.ico' type='image/x-icon'/>
+  </head>
+
+  <body>
+
+    <!-- Här finns all HTML-kod som har med toppen på sidan att göra. Kom
+      ihåg att du hittar bilden i CSS-filen -->
+    <header>
+      <div class="container">
+        <h1>
+          What is JavaScript?
+        </h1>
+        <a href="#">Let us explain!</a>
+      </div>
+    </header>
+
+    <!-- Här finns all HTML-kod som har med de tre ikonerna att göra -->
+    <section class="what-we-do">
+      <div class="container">
+        <h2>Three facts about JavaScript:</h2>
+
+        <div class="icons">
+          <div class="icon">
+            <img src="./images/number-one.svg" />
+            <h3>What it is</h3>
+            <p>It is the third layer of the layer cake of <br/>standard web technologies, together with HTML and CSS.<br/>
+              JavaScript is a scripting or programming language <br/>that allows you to implement complex features on web pages. <br/>Every time a web page does more than just sit there<br/> and display static information for you to look at<br/> JavaScript is probably involved.
+              </p>
+          </div>
+
+          <div class="icon">
+            <img src="./images/number-two.svg" />
+            <h3>What it does</h3>
+            <p><UL><LI>Animated graphics<br/></LI>
+              
+              <LI> Photo slideshows<br/></LI>
+
+              <LI>Autocomplete text suggestions</LI><br/>
+              
+              And much more... For example when your Facebook timeline automatically <br/>updates on your screen or Google<br/> suggests search terms based on a few<br/> letters you’ve started typing. In both cases, that’s JavaScript in action.
+              </p>
+          </div>
+
+          <div class="icon">
+            <img src="./images/number-three.svg" />
+            <h3>Why use it</h3>
+            <p>Aside from the unlimited possibilities,<br/> there are many reasons for web developers<br/>
+               to use JavaScript over other<br/> programming languages: <br/>
+            <UL><LI>JavaScript is the most popular language<br/></LI>
+            <LI>There’s a low threshold to get started<br/></LI>
+            <LI>It’s a fun language to learn</LI></UL>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Här finns all HTML-kod som har med "about us"-sektionen att göra -->
+    <section class="about-us">
+      <div class="container">
+        <h4>Learn more and contact us!</h4>
+        <p>
+          More information on the facts mentioned abouve can be found in these pages: <br/>
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript <br/>
+
+https://skillcrush.com/blog/javascript/ <br/>
+
+hackreactor.com/blog/what-is-javascript-used-for
+
+
+        </p>
+        <a href="#">Contact us</a>
+      </div>
+    </section>
+
+    <!-- Här kan du lägga till kod om du vill fylla i något i footern -->
+    <footer>
+      <div class="container"></div>
+    </footer>
+  </body>
+</html>
